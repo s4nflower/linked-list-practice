@@ -89,7 +89,7 @@ public class Exercises {
         ListNode curr = head;
         while (curr != null) {
             if (curr.data < 0) {
-                curr.data = Math.abs(curr.data);
+                curr.data = Math.abs(curr.data); // I initially tried doing curr.data * -1, it worked, but idk what is better, this or the other
             }
             curr = curr.next;
         }
